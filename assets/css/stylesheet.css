@@ -1,0 +1,176 @@
+ html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+  }
+
+  .navbar ol{
+    display: flex;
+    justify-content: space-between;
+    min-width: 450px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .navbar a{
+    display: block;
+    line-height: 100px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  .navbar a:hover{
+    cursor: pointer;
+    color: #23B5EF;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .hero{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: radial-gradient( rgba(0, 0, 0, .4), rgba(0, 0, 0, .7) ), url(../images/fotoefectos.com_.jpg) , url(../images/miyamotoaonumathumbs.jpg) ; */
+    background-image: radial-gradient(rgba(0, 0, 0, .4),rgba(0,0,0,.7)), url(../images/eiji_switch~2.jpg), url(../images/eiji-aonuma.pop.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #23B5EF;
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    object-fit: cover;
+}
+
+.hero-title{
+/* position: absolute; */
+  /* top: 0; */
+  margin: 0;
+  font-size: 70px;
+  font-weight: 700;
+  /* font-family: 'Open Sans Condensed', sans-serif; */
+  text-transform: uppercase;
+}
+
+.hero-subtitle{
+  margin-top: 20px;
+  font-size: 30px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.myButton {
+  background-color:transparent;
+  border-radius:28px;
+  border:2px solid #23B5EF;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  /* font-family:Arial; */
+  font-size:17px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+  border-color:white;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+.works{
+  display: flex;
+}
+.first_steps , .more_recently {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 400px;
+  background-color: rgb(59, 59, 59);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: white;
+  font-weight: 300;
+  text-shadow: 4px 4px 10px rgba(150, 150, 150, 0.64);
+}
+.works i{
+  text-shadow: initial;
+  font-size: 50px;
+  color: #23B5EF;
+}
+.first_steps{
+  background-image: url(../images/Marvelous.png);
+  justify-content: center;
+  align-items: flex-end;
+}
+.first_steps:hover{
+  /* background-image: url(../images/Marvelous.png); */
+  background-color: transparent;
+}
+.first_steps h3{
+  margin-right: 70px;
+  letter-spacing: 8px;
+}
+.first_steps i{
+  position: relative;
+  right: 175px;
+}
+
+.more_recently{
+  background-image: url(../images/BOTW.jpg);
+  justify-content: center;
+  align-items: flex-start;
+
+}
+.more_recently:hover{
+  background-color: transparent;
+}
+
+.more_recently h3{
+  margin-left: 70px;
+  letter-spacing: 8px;
+}
+.more_recently i{
+  position: relative;
+  left: 175px;
+}
+.about{
+  height: 1000px;
+  background-image: url(../images/miyamotoaonumathumbs.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(116, 114, 114);
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.about-Container{
+  flex-direction: column;
+  position: absolute;
+  left: 200px;
+  width: 330px;
+}

@@ -174,3 +174,188 @@
   left: 200px;
   width: 330px;
 }
+
+.about h3{
+  font-weight: 700;
+  font-size: 5em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.about p{
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  font-size: 1.28em;
+}
+.about i {
+  font-size: 50px;
+  margin: 20px 10px;
+  color:white
+}
+.about i:hover
+{
+  color: #23B5EF;
+}
+.Achievements{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 500px;
+  /* border: 2px solid red; */
+  background-color: rgb(59, 59, 59);
+  background-image: url(../images/Miyamoto-and-Aonuma.png);
+  background-size: cover;
+  background-position:center;
+  /* background-attachment: fixed; */
+  background-blend-mode: multiply;
+}
+
+.Achievements h2{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  color: white;
+  font-size: 4em;
+  letter-spacing: 12px;
+  font-weight: 700;
+  margin-bottom: 0;
+
+}
+.archivement{
+  color: white;
+  width: 300px;
+}
+
+.archivement h3{
+  width: 150px;
+  font-size: 3em;
+  border-bottom: 2px solid white;
+  margin-bottom: 0;
+}
+.archivement p{
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 20px 0 85px 0;
+  background-image: url(../images/1856252.jpg);
+  background-repeat: no-repeat;
+  background-color: rgb(95, 95, 95);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  /* border: 2px solid red; */
+  color: white;
+}
+.team-title{
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  margin-bottom: 0;
+}
+.team-description{
+  width: 385px;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.team h3{
+  font-size: 2em;
+  letter-spacing: 12px;
+  margin-top: 2em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.team-address, .team-hoursDescription{
+  margin-top: 0;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+
+  height: 300px;
+  background-color: #13e1ff;
+  /* color:#cc46a4 */
+  color: black;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  
+}
+.contact-container h3{
+  font-size: 1.7em;
+  letter-spacing: 10px;
+  /* margin-bottom: 1em; */
+}
+.contact-container p{
+  width: 250px;
+  font-size: 1.3em;
+  font-weight: 700;
+  
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.contact-form input{
+  /* color: black; */
+  width: 250px;
+  background: transparent;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  outline: none;
+}
+.contact-form input::placeholder{
+  color: black;
+}
+.contact-form textarea{
+  width: 250px;
+  height: 70px;
+  padding: 5px;
+  background: transparent;
+  border: 2px solid black;
+  outline: none;
+}
+.contact-form textarea::placeholder{
+  color: black;
+}
+.contact-form button{
+
+  padding: 10px;
+  margin-top: 10px;
+  background-color: black;
+  color: #13e1ff;
+  border-radius: 0;
+  border: 0;
+  cursor: pointer;
+  
+}
+.footer{
+  height: 50px;
+  background-color: #51d1f6;
+  color: black;
+}
+.footer p{
+  margin: 0 ;
+  text-align: center;
+  padding: 10px;
+}

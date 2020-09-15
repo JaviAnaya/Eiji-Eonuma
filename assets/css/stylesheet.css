@@ -3,13 +3,30 @@
   padding: 0;
   font-family: 'Open Sans Condensed', sans-serif;
   }
+  .burguer-button{
+    display: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    border-radius: 50%;
+    background-color: #23B5EF;
+    color: white;
+    left: 5px;
+    top: 5px;
 
+  }
   .header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    /* height: 100px; */
     background-color: black;
+  }
+  .navbar{
+    width: auto;
   }
 
   .navbar ol{
@@ -96,6 +113,7 @@
 }
 .works{
   display: flex;
+  flex-wrap: wrap;
 }
 .first_steps , .more_recently {
   /* border: 2px solid red; */
@@ -123,25 +141,25 @@
 .first_steps{
   background-image: url(../images/Marvelous.png);
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 .first_steps:hover{
   /* background-image: url(../images/Marvelous.png); */
   background-color: transparent;
 }
 .first_steps h3{
-  margin-right: 70px;
+  /* margin-right: 70px; */
   letter-spacing: 8px;
 }
 .first_steps i{
   position: relative;
-  right: 175px;
+  /* right: 175px; */
 }
 
 .more_recently{
   background-image: url(../images/BOTW.jpg);
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
 }
 .more_recently:hover{
@@ -149,15 +167,17 @@
 }
 
 .more_recently h3{
-  margin-left: 70px;
+  /* margin-left: 70px; */
   letter-spacing: 8px;
 }
 .more_recently i{
   position: relative;
-  left: 175px;
+  /* left: 175px; */
 }
 .about{
-  height: 1000px;
+  /* height: 1000px; */
+  display: flex;
+  justify-content: flex-start;
   background-image: url(../images/miyamotoaonumathumbs.jpg);
   background-position: center;
   background-attachment: fixed;
@@ -170,22 +190,29 @@
 
 .about-Container{
   flex-direction: column;
-  position: absolute;
-  left: 200px;
-  width: 330px;
+  /* position: relative; */
+  /* top: 100px; */
+  /* left: 100px; */
+  max-width: 330px;
+  margin-left: 100px;
 }
 
 .about h3{
   font-weight: 700;
   font-size: 5em;
   line-height: 1.2em;
+  text-align: center;
   text-transform: uppercase;
+  /* margin-top: 0; */
   margin-bottom: 30px;
 }
 .about p{
   font-weight: 300;
   letter-spacing: 0.02em;
   font-size: 1.28em;
+}
+.social{
+  text-align: center;
 }
 .about i {
   font-size: 50px;
@@ -200,7 +227,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 500px;
+  /* height: 500px; */
   /* border: 2px solid red; */
   background-color: rgb(59, 59, 59);
   background-image: url(../images/Miyamoto-and-Aonuma.png);
@@ -223,7 +250,7 @@
 }
 .archivement{
   color: white;
-  width: 300px;
+  max-width: 250px;
 }
 
 .archivement h3{
@@ -240,8 +267,9 @@
 .team{
   display: flex;
   flex-direction: column;
+  /* flex-wrap: wrap; */
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 20px 0 85px 0;
   background-image: url(../images/1856252.jpg);
   background-repeat: no-repeat;
@@ -260,7 +288,7 @@
   margin-bottom: 0;
 }
 .team-description{
-  width: 385px;
+ max-width: 385px;
   font-size: 1.3em;
   text-align: center;
 }
@@ -284,8 +312,9 @@
 .contact{
   display: flex;
   align-items: center;
-
-  height: 300px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* height: 300px; */
   background-color: #13e1ff;
   /* color:#cc46a4 */
   color: black;
@@ -294,7 +323,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  /* width: 50%; */
   
 }
 .contact-container h3{
@@ -313,7 +342,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  /* width: 50%; */
 }
 .contact-form input{
   /* color: black; */
@@ -358,4 +387,100 @@
   margin: 0 ;
   text-align: center;
   padding: 10px;
+}
+
+@media screen and (max-width:1024px)
+{
+  .hero-subtitle{ 
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+}
+@media screen and (max-width:767px)
+{
+  .header {
+    height: auto;
+  }
+  .header nav{
+    width: 100%;
+  }
+  .header ol{
+    width: 100%;
+    display: initial;
+    min-width: auto;
+    /* margin:0 auto ; */
+  }
+  .header li{
+    text-align: center;
+
+  }
+  .header a{
+    line-height: 50px;
+  }
+  .first_steps , .more_recently{
+    width: 100%;
+  }
+  .archivement{
+    min-width: 300px;
+  }
+}
+@media screen and (max-width:468px)
+{
+  .header{
+    display: none;
+  }
+  .burguer-button{
+    display: block;
+  }
+  .more_recently h3{
+    font-size: 1em;
+  }
+  .about{
+    justify-content: center;
+  }
+  .about-Container{
+    margin-left: 0;
+    
+  }
+  .about h3{
+    font-size:3em;
+  }
+  .about p{
+    font-size: 0.9em;
+    padding: 10px;
+  }
+  .Achievements{
+    justify-content: center;
+    align-items: center;
+
+  }
+  .Achievements h2{
+    font-size: 2em;
+    letter-spacing: 5px;
+    text-align: left;
+  }
+  .archivement h3{
+    font-size: 2em;
+    margin: 0 auto;
+  }
+  .archivement p{
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .team h2{
+    font-size: 4em;
+    letter-spacing: 5px;
+  }
+  .team p{
+    padding: 5px;
+  }
+}
+@media screen and (max-width:320px){
+  .first_steps , .more_recently{
+    font-size: 0.9em;
+  }
+  .works i{
+    font-size: 30px;
+  }
+  
 }

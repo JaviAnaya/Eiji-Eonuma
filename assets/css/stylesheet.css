@@ -12,7 +12,7 @@
     position: fixed;
     z-index: 4;
     border-radius: 50%;
-    background-color: #23B5EF;
+    background-color: rgba(59, 59, 59,0.9);
     color: white;
     left: 5px;
     top: 5px;
@@ -85,9 +85,10 @@
 }
 
 .hero-subtitle{
+  text-align: center;
   margin-top: 20px;
   font-size: 30px;
-  letter-spacing: 12px;
+  letter-spacing: 8px;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -391,32 +392,68 @@
 
 @media screen and (max-width:1024px)
 {
-  .hero-subtitle{ 
+  /* .hero-subtitle{ 
     font-size: 20px;
     letter-spacing: 5px;
-  }
+  } */
 }
 @media screen and (max-width:767px)
 {
+  .burguer-button{
+    display: block;
+  }
   .header {
     height: auto;
   }
-  .header nav{
-    width: 100%;
+  .navbar{
+    position: fixed;
+    /* width: 100%; */
+    background-color: rgba(35, 181, 239,0.8);
+    
+    z-index: 3;
+    top:0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    transition: .3s;
   }
-  .header ol{
+  .navbar.is-active{
+    left: 0;
+  }
+  .navbar ol{
     width: 100%;
-    display: initial;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     min-width: auto;
     /* margin:0 auto ; */
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-between;
   }
   .header li{
+    width: 100%;
     text-align: center;
 
   }
   .header a{
     line-height: 50px;
+    text-decoration: underline;
+    font-size: 2em;
   }
+  .header a:hover{
+    color: rgba(59, 59, 59,0.9);
+  }
+  .hero-title{
+    font-size: 50px;
+  }
+  .hero-subtitle{
+    letter-spacing: 3px;
+  }
+
+
   .first_steps , .more_recently{
     width: 100%;
   }
@@ -426,12 +463,10 @@
 }
 @media screen and (max-width:468px)
 {
-  .header{
+  /* .header{
     display: none;
-  }
-  .burguer-button{
-    display: block;
-  }
+  } */
+
   .more_recently h3{
     font-size: 1em;
   }
@@ -476,11 +511,20 @@
   }
 }
 @media screen and (max-width:320px){
+  .hero-title{
+    font-size: 30px;
+  }
+  .hero-subtitle{
+    font-size: 15px;
+  }
+
   .first_steps , .more_recently{
     font-size: 0.9em;
   }
   .works i{
     font-size: 30px;
   }
-  
+  .team h2{
+    font-size: 3em;
+  }
 }

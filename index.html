@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./assets/css/stylesheet.css">
 </head>
 <body>
-  <i class="fas fa-bars burguer-button " id="burger-menu"></i>
+  <i class="fas fa-bars burguer-button " id="burger-navbar"></i>
   <header class="header">
     <nav class="navbar">
       <ol>
@@ -96,5 +96,35 @@
   <footer class="footer">
     <p>2020 BY Eiji Aonuma. Produly Created Whith JA</p>
   </footer>
+  <script>
+    // console.log('Hola mundo! es mi primera linia en js');
+    console.log();
+    const ipad = matchMedia('screen and (max-width: 767px)')
+    const navbar = document.querySelector('.navbar');
+    // console.log(menu);
+    const burguerButton = document.querySelector('#burger-navbar')
+    // console.log(burguerButton);
+
+    
+    ipad.addListener(validation)
+
+    function validation(event) {
+      if(event.matches){
+         burguerButton.addEventListener('click',hideshow)
+      }
+      else{
+         burguerButton.removeEventListener('click',hideshow)
+      }
+      // console.log(event.matches);
+    }
+    validation(ipad);
+    function hideshow(){
+      if(navbar.classList.contains('is-active')){
+      navbar.classList.remove('is-active');
+      } else{
+      navbar.classList.add('is-active');
+      }
+    }
+  </script>
 </body>
 </html>
